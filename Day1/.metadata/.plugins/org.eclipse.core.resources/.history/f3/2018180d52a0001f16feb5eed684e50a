@@ -1,0 +1,6 @@
+package com.walmart.ecommerce.repository;
+
+public interface ProjectRepository {
+	
+	Product save(Product p);
+}

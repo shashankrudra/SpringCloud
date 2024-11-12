@@ -1,0 +1,15 @@
+package com.walmart.ecommerce.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Coupon {
+	@Id
+	private int id;
+	@Column(unique=true)
+	private String couponCode;
+	private int discount;
+
+}

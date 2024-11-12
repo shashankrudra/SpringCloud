@@ -1,0 +1,15 @@
+package com.walmart.ecommerce.feign.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.walmart.ecommerce.entity.Coupon;
+
+@FeignClient(url="http://localhost:8081", name="cs")
+public interface CouponFeignClient {
+	
+	@GetMapping("/coupon/{code}")
+	public Coupon searchtCoupon(@PathVariable String code) {
+
+}
