@@ -3,6 +3,7 @@ package com.walmart.ecommerce.rest.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.walmart.api.order.rest.request.NotificationRequest;
 import com.walmart.ecommerce.entity.Product;
 import com.walmart.ecommerce.feign.client.AppFeignClient;
 import com.walmart.ecommerce.rest.response.CouponResponse;
 import com.walmart.ecommerce.rest.response.EmailResponse;
 import com.walmart.ecommerce.service.ProductService;
+import com.walmart.email.entity.Email;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
@@ -31,6 +34,9 @@ public class ProductRestController {
 	@Value("${product_type}")
 	private String productType;
 	
+	@Autowired
+	private JmsTemplate jmsTemplate;
+	
 	@CircuitBreaker(name="ccb", fallbackMethod = "insertProductFallback")
 	@PostMapping("/product")
 	public Product insertProduct(@RequestBody Product p, @RequestParam String code) {
@@ -45,8 +51,16 @@ public class ProductRestController {
 		Product rp = service.registerProduct(p);
 		
 		//make rest call to Email Service 
-		//EmailResponse ers = cfc.sendMessage(msg);
+		Email email = new Email();
+		email.setId(1);
+		email.setSubject(msg);
+		EmailResponse ers = cfc.sendEmail(email);
 		
+		NotificationRequest nrq = new NotificationRequest();
+		nrq.setId("1");
+		nrq.setMessage("test from product service");
+		nrq.setTo("to notification mq");
+		jmsTemplate.convertAndSend("email_queue", nrq);
 		
 		return rp;
 	}

@@ -2285,3 +2285,98 @@ org.eclipse.core.runtime.CoreException: Launch configuration Application referen
 2024-11-15 17:49:04,633 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-11-15 17:49:04,651 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-11-15 17:49:04,655 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\EmailService\src\test\resources
+2024-11-15 19:07:47,752 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:07:47,965 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:07:47,971 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\eureka-service\src\test\resources
+2024-11-15 19:08:57,233 [Worker-97: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:08:57,248 [Worker-97: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:08:57,252 [Worker-97: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:10:23,238 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:10:23,245 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:10:23,248 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:10:30,877 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:10:30,893 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:10:30,896 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:10:35,022 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:10:35,037 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:10:35,041 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:11:00,010 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:11:00,016 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:11:00,019 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:14:16,545 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:14:16,559 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:14:16,562 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\EmailService\src\test\resources
+2024-11-15 19:15:25,843 [Worker-102: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.walmart:4-SpringBootJPA:0.0.1-SNAPSHOT @ C:\Training\Day5\5ProductService\pom.xml.
+2024-11-15 19:15:28,698 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:15:28,698 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:15:28,703 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:15:28,983 [Worker-102: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-15 19:15:29,472 [Worker-102: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.walmart:4-SpringBootJPA:0.0.1-SNAPSHOT @ C:\Training\Day5\5ProductService\pom.xml.
+2024-11-15 19:15:31,447 [Worker-102: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /5ProductService/src/main/java
+2024-11-15 19:15:31,447 [Worker-102: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /5ProductService/src/main/resources
+2024-11-15 19:15:31,448 [Worker-102: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /5ProductService/src/main/resources
+2024-11-15 19:15:31,448 [Worker-102: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /5ProductService/src/test/java
+2024-11-15 19:15:31,449 [Worker-102: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /5ProductService/src/test/resources
+2024-11-15 19:15:32,249 [Worker-102: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2024-11-15 19:15:33,419 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:15:33,438 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:15:33,444 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:18:58,529 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:18:58,535 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:18:58,539 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:20:45,967 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:20:45,979 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:20:45,982 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:22:57,626 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar
+2024-11-15 19:22:57,994 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar
+2024-11-15 19:22:58,214 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.4.1/maven-jar-plugin-3.4.1.jar
+2024-11-15 19:22:58,494 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.4.1/maven-jar-plugin-3.4.1.jar
+2024-11-15 19:22:58,668 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/3.1.2/maven-install-plugin-3.1.2.jar
+2024-11-15 19:22:58,901 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/3.1.2/maven-install-plugin-3.1.2.jar
+2024-11-15 19:22:59,055 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/3.1.2/maven-deploy-plugin-3.1.2.jar
+2024-11-15 19:22:59,335 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/3.1.2/maven-deploy-plugin-3.1.2.jar
+2024-11-15 19:22:59,470 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.walmart:CommonDtos:1.0.0-RELEASE @ C:\Training\Day5\CommonDtos\pom.xml.
+2024-11-15 19:22:59,556 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.4.1/maven-jar-plugin-3.4.1.pom
+2024-11-15 19:22:59,584 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.4.1/maven-jar-plugin-3.4.1.pom
+2024-11-15 19:22:59,939 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CommonDtos/src/main/java
+2024-11-15 19:22:59,940 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CommonDtos/src/main/resources
+2024-11-15 19:22:59,940 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CommonDtos/src/test/java
+2024-11-15 19:22:59,940 [Worker-102: Creating project "CommonDtos"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CommonDtos/src/test/resources
+2024-11-15 19:23:00,708 [Worker-102: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-15 19:23:00,709 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:23:00,713 [Worker-102: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-15 19:23:00,714 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-15 19:23:28,968 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:23:28,978 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:23:28,981 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:23:29,042 [Worker-102: Building Workspace] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-15 19:23:29,045 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:23:29,046 [Worker-102: Building Workspace] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-15 19:23:29,047 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-15 19:23:37,068 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:23:37,074 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:23:37,077 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:25:15,431 [Worker-110: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.walmart:4-SpringBootJPA:0.0.1-SNAPSHOT @ C:\Training\Day5\5ProductService\pom.xml.
+2024-11-15 19:26:16,903 [Worker-111: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.walmart:4-SpringBootJPA:0.0.1-SNAPSHOT @ C:\Training\Day5\5ProductService\pom.xml.
+2024-11-15 19:26:17,585 [Worker-111: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/CommonDtos: com.walmart:CommonDtos:1.0.0-RELEASE with classifier  to /CommonDtos/target/classes
+2024-11-15 19:26:19,236 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:26:19,237 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:26:19,247 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:26:20,955 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:26:20,974 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:26:20,977 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:26:49,446 [Worker-110: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.walmart:4-SpringBootJPA:0.0.1-SNAPSHOT @ C:\Training\Day5\5ProductService\pom.xml.
+2024-11-15 19:26:50,092 [Worker-110: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/CommonDtos: com.walmart:CommonDtos:1.0.0-RELEASE with classifier  to /CommonDtos/target/classes
+2024-11-15 19:26:51,819 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:26:51,820 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:26:51,825 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:27:07,993 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:27:08,013 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:27:08,017 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:28:19,153 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 19:28:19,160 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 19:28:19,163 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Training\Day5\5ProductService\src\test\resources
+2024-11-15 19:29:25,468 [Worker-113: Launching 5ProductService - Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/CommonDtos: com.walmart:CommonDtos:1.0.0-RELEASE with classifier null to /CommonDtos/target/classes
+2024-11-15 19:29:25,971 [Worker-113: Launching 5ProductService - Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/CommonDtos: com.walmart:CommonDtos:1.0.0-RELEASE with classifier null to /CommonDtos/target/classes
+2024-11-15 19:29:26,416 [Worker-113: Launching 5ProductService - Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/CommonDtos: com.walmart:CommonDtos:1.0.0-RELEASE with classifier null to /CommonDtos/target/classes
+2024-11-15 19:37:00,710 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

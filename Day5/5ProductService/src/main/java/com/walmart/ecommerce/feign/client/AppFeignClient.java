@@ -4,9 +4,11 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.walmart.ecommerce.rest.response.CouponResponse;
 import com.walmart.ecommerce.rest.response.EmailResponse;
+import com.walmart.email.entity.Email;
 
 // hard coding of the url and port is a bad choice
 // as it doesn't allow you to do load balancing
@@ -20,6 +22,6 @@ public interface AppFeignClient {
 	public CouponResponse searchCoupon(@PathVariable String code);
 	
 	@PostMapping("/es/email")
-	public EmailResponse sendEmail(@PathVariable String email);
+	public EmailResponse sendEmail(@RequestBody Email email);
 
 }

@@ -1,0 +1,18 @@
+package com.walmart.email.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.walmart.email.entity.Email;
+import com.walmart.email.service.EmailService;
+
+@Service
+public class EmailServiceImpl implements EmailService{
+
+	@Override
+	public String sendEmail(Email email) {
+		String msg = email.getSubject();
+		System.out.println(msg);
+		return msg;
+	}
+
+}

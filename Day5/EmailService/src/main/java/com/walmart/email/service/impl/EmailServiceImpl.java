@@ -11,6 +11,7 @@ public class EmailServiceImpl implements EmailService{
 	@Override
 	public String sendEmail(Email email) {
 		String msg = email.getSubject();
+		
 		System.out.println(msg);
 		return msg;
 	}

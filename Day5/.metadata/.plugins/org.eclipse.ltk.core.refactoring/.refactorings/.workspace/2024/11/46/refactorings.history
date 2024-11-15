@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;7EurekaProductCoupon&apos;" deleteContents="false" description="Delete resource &apos;7EurekaProductCoupon&apos;" element1="/7EurekaProductCoupon" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1731436890865"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;7EurekaProductCoupon&apos;" deleteContents="false" description="Delete resource &apos;7EurekaProductCoupon&apos;" element1="/7EurekaProductCoupon" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1731436890865"/>&#x0A;<refactoring comment="Copy 0 packages to &apos;5ProductService/src/main/java&apos;&#x0D;&#x0A;- Destination element: &apos;5ProductService/src/main/java&apos;" description="Copy packages" destination="=5ProductService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" flags="589830" fragments="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1731698369775" version="1.0"/>
 </session>
