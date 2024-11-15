@@ -1,0 +1,36 @@
+package com.walmart.ecommerce.rest.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.walmart.ecommerce.entity.Coupon;
+import com.walmart.ecommerce.service.CouponService;
+
+@RestController
+public class HelloRestController {
+	
+	@Autowired
+	private CouponService service;
+	
+	@PostMapping("/coupon")
+	public Coupon insertCoupon(@RequestBody Coupon p) {
+		Coupon rp = service.registerCoupon(p);
+		return rp;
+	}
+	
+	/*
+	 * @GetMapping("/coupon/{id}") public Coupon searchtCoupon(@PathVariable int id)
+	 * { Coupon rp = service.findCoupon(id); return rp; }
+	 */
+	
+	@GetMapping("/coupon/{code}")
+	public Coupon searchtCoupon(@PathVariable String code) {
+		Coupon rp = service.findByCouponCode(code);
+		return rp;
+	}
+
+}

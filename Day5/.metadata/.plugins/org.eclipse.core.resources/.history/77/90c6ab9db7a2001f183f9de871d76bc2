@@ -1,0 +1,16 @@
+package com.walmart.ecommerce.rest.response;
+
+public class EmailResponse {
+	
+	private String message;
+
+	public String getDiscount() {
+		return message;
+	}
+
+	public void setDiscount(String msg) {
+		this.message = msg;
+	}
+	
+
+}

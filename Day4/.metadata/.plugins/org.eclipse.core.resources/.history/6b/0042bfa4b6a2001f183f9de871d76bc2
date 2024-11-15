@@ -1,0 +1,12 @@
+package com.walmart.email.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Email {
+	
+	@Id
+	private int id;
+
+}

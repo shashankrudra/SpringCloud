@@ -1,0 +1,5 @@
+package com.walmart.email.rest.controller;
+
+public class EmailRestController {
+
+}

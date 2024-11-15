@@ -1,0 +1,5 @@
+package com.walmart.email.entity;
+
+public class Email {
+
+}

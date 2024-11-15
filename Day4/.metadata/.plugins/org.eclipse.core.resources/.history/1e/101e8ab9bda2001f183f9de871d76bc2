@@ -1,0 +1,6 @@
+package com.walmart.email.service;
+
+public interface EmailService {
+
+	String sendEmail(String msg);
+}

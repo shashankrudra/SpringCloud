@@ -1,0 +1,16 @@
+package com.walmart.email.rest.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+ 
+
+@RestController
+public class EmailRestController {
+	
+	@GetMapping("/email/{msg}")
+	public String sendMessage(@PathVariable String msg) {
+		return msg;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.walmart.email.service;
+
+public class EmailService {
+
+}

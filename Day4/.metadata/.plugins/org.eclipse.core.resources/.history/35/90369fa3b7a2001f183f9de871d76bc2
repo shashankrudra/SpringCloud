@@ -1,0 +1,9 @@
+package com.walmart.ecommerce.rest.response;
+
+public class EmailResponse {
+	
+	private String message;
+ 
+	
+
+}

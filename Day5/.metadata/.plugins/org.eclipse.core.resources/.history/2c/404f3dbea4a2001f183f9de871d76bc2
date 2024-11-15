@@ -1,0 +1,4 @@
+spring.application.name=cs
+
+
+spring.config.import=configserver:http://localhost:8888/

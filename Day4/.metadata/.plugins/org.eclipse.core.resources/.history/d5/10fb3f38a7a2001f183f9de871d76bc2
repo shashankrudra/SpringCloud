@@ -1,0 +1,64 @@
+package com.walmart.ecommerce.rest.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.walmart.ecommerce.entity.Product;
+import com.walmart.ecommerce.feign.client.CouponFeignClient;
+import com.walmart.ecommerce.rest.response.CouponResponse;
+import com.walmart.ecommerce.service.ProductService;
+
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
+@RestController
+public class ProductRestController {
+	
+	@Autowired
+	private ProductService service;
+	 
+	@Autowired
+	private CouponFeignClient cfc;
+
+	@Value("${product_type")
+	private Product productType;
+	
+	@CircuitBreaker(name="ccb", fallbackMethod = "insertProductFallback")
+	@PostMapping("/product")
+	public Product insertProduct(@RequestBody Product p, @RequestParam String code) {
+		System.out.println("making rest call");
+		//make rest call to Coupon Service 
+		CouponResponse crs = cfc.searchtCoupon(code);
+		
+		p.setPrice(p.getPrice()-crs.getDiscount());
+		
+		System.out.println("saving the product with discount");
+		Product rp = service.registerProduct(p);
+		
+		return rp;
+	}
+	
+	public Product insertProductFallback(@RequestBody Product p, @RequestParam(defaultValue="Sale") String code,
+			Throwable t) {
+		System.out.println("saving the product without discount in fallback");
+		Product rp = service.registerProduct(p);
+		
+		return rp;
+	}
+	
+	@GetMapping("/product/{id}")
+	public Product searchtProduct(@PathVariable int id) {
+		Product rp = service.findProduct(id);
+		return rp;
+	}
+
+	@GetMapping("/product/type")
+	public Product findProductType() {
+		return productType;
+	}
+}

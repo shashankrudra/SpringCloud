@@ -1,0 +1,72 @@
+package com.walmart.ecommerce.rest.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.walmart.ecommerce.entity.Product;
+import com.walmart.ecommerce.feign.client.AppFeignClient;
+import com.walmart.ecommerce.rest.response.CouponResponse;
+import com.walmart.ecommerce.rest.response.EmailResponse;
+import com.walmart.ecommerce.service.ProductService;
+
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
+@RestController
+@RefreshScope
+public class ProductRestController {
+	
+	@Autowired
+	private ProductService service;
+	 
+	@Autowired
+	private AppFeignClient cfc;
+
+	@Value("${product_type}")
+	private String productType;
+	
+	@CircuitBreaker(name="ccb", fallbackMethod = "insertProductFallback")
+	@PostMapping("/product")
+	public Product insertProduct(@RequestBody Product p, @RequestParam String code) {
+		System.out.println("making rest call");
+		//make rest call to Coupon Service 
+		CouponResponse crs = cfc.searchCoupon(code);
+		
+		p.setPrice(p.getPrice()-crs.getDiscount());
+		
+		String msg = "saving the product with discount";
+		System.out.println(msg);
+		Product rp = service.registerProduct(p);
+		
+		//make rest call to Email Service 
+		//EmailResponse ers = cfc.sendMessage(msg);
+		
+		
+		return rp;
+	}
+	
+	public Product insertProductFallback(@RequestBody Product p, @RequestParam(defaultValue="Sale") String code,
+			Throwable t) {
+		System.out.println("saving the product without discount in fallback");
+		Product rp = service.registerProduct(p);
+		
+		return rp;
+	}
+	
+	@GetMapping("/product/{id}")
+	public Product searchtProduct(@PathVariable int id) {
+		Product rp = service.findProduct(id);
+		return rp;
+	}
+
+	@GetMapping("/product/type")
+	public String findProductType() {
+		return productType;
+	}
+}

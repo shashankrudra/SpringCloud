@@ -1,0 +1,13 @@
+package com.walmart.email.service.impl;
+
+import com.walmart.email.service.EmailService;
+
+public class EmailServiceImpl implements EmailService{
+
+	@Override
+	public String sendEmail(String msg) {
+
+		return msg;
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.walmart.notification.service.impl;
+
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class NotificationServiceImpl {
+	
+	@JmsListener
+	public void processNotification(String msg) {
+		System.out.println(msg);
+	}
+}

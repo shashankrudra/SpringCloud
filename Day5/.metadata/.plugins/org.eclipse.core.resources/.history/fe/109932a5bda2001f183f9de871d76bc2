@@ -1,0 +1,23 @@
+package com.walmart.email.rest.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.walmart.email.service.EmailService;
+ 
+
+@RestController
+public class EmailRestController {
+	
+	@Autowired
+	private EmailService service;
+	
+	@GetMapping("/email/{msg}")
+	public String sendMessage(@PathVariable String msg) {
+		
+		return service.sendEmail(msg);
+	}
+
+}

@@ -1,0 +1,9 @@
+spring.application.name=ConfigServer
+server.port=8888
+#http://localhost:8888/application/default
+
+#search local FS instead of git
+spring.profiles.active=native
+spring.cloud.config.server.native.search-locations=file:C://Training//Day4//LocalRepo
+
+management.endpoints.web.exposure.include=refresh,busrefresh
